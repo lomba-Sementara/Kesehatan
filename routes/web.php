@@ -10,7 +10,7 @@ Route::get('/', function () {
     return view('Frontend.main');
 });
 
-Route::get('/dashboard', [\App\Http\Controllers\AuthController::class, 'dahboard']);
+Route::get('/dashboard', [AuthController::class, 'backendDashboard']);
 
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
