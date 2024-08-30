@@ -20,3 +20,4 @@ Route::get('/register', function () {
 });
 
 route::get('/forget', [ForgetController::class, 'showForgetForm'])->name('forget');
+
